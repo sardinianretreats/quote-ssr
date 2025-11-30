@@ -161,7 +161,10 @@ function handleCalculate() {
 
   // Calcolo costi extra
   const cleaningCost = accData.pulizia || 0;
-  const linenCost = linenIncluded ? guests * LINEN_PRICE_PER_PERSON : 0;
+  const linenCost = linenIncluded
+  ? (accKey === "Villa Jolies" ? 0 : guests * LINEN_PRICE_PER_PERSON)
+  : 0;
+  //const linenCost = linenIncluded ? guests * LINEN_PRICE_PER_PERSON : 0;
   const petCost = hasPet ? PET_FEE : 0;
 
   // Sconto in percentuale SOLO sull'affitto
@@ -535,3 +538,4 @@ async function handleCopyQuote() {
     alert("Impossibile copiare negli appunti su questo dispositivo. Copia manualmente dal riepilogo.");
   }
 }
+
