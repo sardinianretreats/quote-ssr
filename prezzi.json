@@ -1,0 +1,104 @@
+{
+  "Asfodelo": {
+    "pulizia": 60.0,
+    "prezzi": {
+      "gennaio": 140,
+      "febbraio": 100,
+      "marzo": 110,
+      "aprile": 150,
+      "maggio": 160,
+      "giugno": 180,
+      "luglio": 210,
+      "agosto": 210,
+      "settembre": 180,
+      "ottobre": 140,
+      "novembre": 100,
+      "dicembre": 160
+    }
+  },
+  "Corbezzolo": {
+    "pulizia": 100.0,
+    "prezzi": {
+      "gennaio": 180,
+      "febbraio": 160,
+      "marzo": 180,
+      "aprile": 220,
+      "maggio": 230,
+      "giugno": 280,
+      "luglio": 310,
+      "agosto": 310,
+      "settembre": 260,
+      "ottobre": 180,
+      "novembre": 160,
+      "dicembre": 200
+    }
+  },
+  "Rosmarino": {
+    "pulizia": 110.0,
+    "prezzi": {
+      "gennaio": 190,
+      "febbraio": 170,
+      "marzo": 190,
+      "aprile": 230,
+      "maggio": 240,
+      "giugno": 290,
+      "luglio": 350,
+      "agosto": 350,
+      "settembre": 280,
+      "ottobre": 190,
+      "novembre": 170,
+      "dicembre": 210
+    }
+  },
+  "Villa Jolies": {
+    "pulizia": 250.0,
+    "prezzi": {
+      "gennaio": 260,
+      "febbraio": 260,
+      "marzo": 312,
+      "aprile": 312,
+      "maggio": 364,
+      "giugno": 416,
+      "luglio": 494,
+      "agosto": 520,
+      "settembre": 416,
+      "ottobre": 338,
+      "novembre": 260,
+      "dicembre": 260
+    }
+  },
+  "Acquamarina": {
+    "pulizia": 80.0,
+    "prezzi": {
+      "gennaio": 135.0,
+      "febbraio": 135.0,
+      "marzo": 162.0,
+      "aprile": 162.0,
+      "maggio": 189.0,
+      "giugno": 216.0,
+      "luglio": 256.5,
+      "agosto": 270.0,
+      "settembre": 216.0,
+      "ottobre": 175.5,
+      "novembre": 135.0,
+      "dicembre": 135.0
+    }
+  },
+  "Beachside": {
+    "pulizia": 60.0,
+    "prezzi": {
+      "gennaio": 90,
+      "febbraio": 90,
+      "marzo": 108,
+      "aprile": 108,
+      "maggio": 126,
+      "giugno": 144,
+      "luglio": 180,
+      "agosto": 180,
+      "settembre": 153,
+      "ottobre": 117,
+      "novembre": 90,
+      "dicembre": 90
+    }
+  }
+}

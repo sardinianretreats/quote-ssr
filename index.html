@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sardinian Seaside Retreats - Preventivi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- JS lo useremo dopo -->
+  <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+  <div class="page-overlay"></div>
+
+  <main class="wrapper">
+    <header class="header">
+      <div class="logo-title">
+        <img
+          class="logo"
+          src="https://static.wixstatic.com/media/b735a36e0f6c42a791260055e50d799b.png/v1/fill/w_110%2Ch_110%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/b735a36e0f6c42a791260055e50d799b.png"
+          alt="Sardinian Seaside Retreats logo"
+        />
+        <div class="title-block">
+          <h1>Sardinian Seaside Retreats</h1>
+          <p class="subtitle">Calcolo rapido preventivi case al mare</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Dettagli preventivo</h2>
+
+      <form id="quote-form">
+        <!-- 1) Nome cliente -->
+        <div class="form-group">
+          <label for="client-name">Nome cliente</label>
+          <input
+            type="text"
+            id="client-name"
+            name="clientName"
+            placeholder="Es. Nico e Martina"
+          />
+        </div>
+
+        <!-- 2) Selettore alloggio -->
+        <div class="form-group">
+          <label for="accommodation">Alloggio</label>
+          <select id="accommodation" name="accommodation">
+            <option value="" disabled selected>Seleziona un alloggio</option>
+            <option value="asfodelo">Asfodelo</option>
+            <option value="corbezzolo">Corbezzolo</option>
+            <option value="rosmarino">Rosmarino</option>
+            <option value="acquamarina">Acquamarina</option>
+            <option value="beachside-retreats">Beachside Retreats</option>
+              <option value="villa-jolies">Villa Jolies</option>
+          </select>
+        </div>
+
+        <!-- 3) Check-in -->
+        <div class="form-group">
+          <label for="checkin-date">Data di check-in</label>
+          <input type="date" id="checkin-date" name="checkinDate" />
+        </div>
+
+        <!-- 4) Check-out -->
+        <div class="form-group">
+          <label for="checkout-date">Data di check-out</label>
+          <input type="date" id="checkout-date" name="checkoutDate" />
+        </div>
+
+        <!-- 5) Numero ospiti -->
+        <div class="form-group">
+          <label for="guests">Numero di ospiti</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            step="1"
+            value="2"
+          />
+        </div>
+
+
+        <!-- 6) Percentuale di sconto -->
+<div class="form-group">
+  <label for="discount">Sconto (%)</label>
+  <input
+    type="number"
+    id="discount"
+    name="discount"
+    min="0"
+    max="100"
+    step="1"
+    value="0"
+  />
+</div>
+
+        <!-- Sconto in euro -->
+<div class="form-group">
+  <label for="discount-euro">Sconto in €</label>
+  <input
+    type="number"
+    id="discount-euro"
+    name="discountEuro"
+    min="0"
+    step="1"
+    value="0"
+  />
+</div>
+
+
+
+
+        <!-- 6-7) Opzioni -->
+        <div class="form-group check-group">
+          <label class="checkbox">
+            <input
+              type="checkbox"
+              id="linen-included"
+              name="linenIncluded"
+              checked
+            />
+            <span>Biancheria inclusa</span>
+          </label>
+
+          <label class="checkbox">
+            <input
+              type="checkbox"
+              id="pet"
+              name="pet"
+            />
+            <span>Animale domestico</span>
+          </label>
+        </div>
+
+        <!-- Il bottone funzionerà con il JS che faremo dopo -->
+        <div class="actions">
+          <button type="button" id="calculate-btn">
+            Calcola preventivo
+          </button>
+        </div>
+      </form>
+
+      <div id="quote-result" class="quote-result"></div>
+
+<div class="actions actions-secondary">
+  <button type="button" id="download-btn" disabled>
+    Scarica PDF preventivo
+  </button>
+  <button type="button" id="copy-btn" disabled>
+    Copia testo preventivo
+  </button>
+</div>
+
+
+
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js" defer></script>
+
+</body>
+</html>
