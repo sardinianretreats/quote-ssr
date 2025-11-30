@@ -161,10 +161,9 @@ function handleCalculate() {
 
   // Calcolo costi extra
   const cleaningCost = accData.pulizia || 0;
-  const linenCost = linenIncluded
-  ? (accKey === "Villa Jolies" ? 0 : guests * LINEN_PRICE_PER_PERSON)
-  : 0;
-  //const linenCost = linenIncluded ? guests * LINEN_PRICE_PER_PERSON : 0;
+  // Biancheria: sempre 0 per Villa Jolies, altrimenti segue la logica standard
+  const isVillaJolies = accommodationValue === "villa-jolies";
+  const linenCost = isVillaJolies ? 0 : (linenIncluded ? guests * LINEN_PRICE_PER_PERSON : 0);
   const petCost = hasPet ? PET_FEE : 0;
 
   // Sconto in percentuale SOLO sull'affitto
@@ -195,6 +194,7 @@ function handleCalculate() {
     cleaningCost,
     linenCost,
     petCost,
+    linenIncluded,
     subtotalBeforeEuro,
     discountPercent: validDiscountPercent,
     percentDiscountAmount,
@@ -277,6 +277,7 @@ function renderQuoteResult(quote) {
     cleaningCost,
     linenCost,
     petCost,
+    linenIncluded,
     subtotalBeforeEuro,
     discountPercent,
     percentDiscountAmount,
@@ -307,7 +308,8 @@ function renderQuoteResult(quote) {
 
   // Spese extra
   costRows += `<tr><td class="label">Cleaning fee</td><td class="value">${fmtMoney(cleaningCost)} €</td></tr>`;
-  costRows += `<tr><td class="label">Linen${linenCost > 0 ? "" : " (not included)"}</td><td class="value">${fmtMoney(linenCost)} €</td></tr>`;
+  const linenLabelSuffix = linenIncluded ? " (included)" : " (not included)";
+  costRows += `<tr><td class="label">Linen${linenLabelSuffix}</td><td class="value">${fmtMoney(linenCost)} €</td></tr>`;
   if (petCost > 0) {
     costRows += `<tr><td class="label">Pet fee</td><td class="value">${fmtMoney(petCost)} €</td></tr>`;
   }
@@ -538,4 +540,3 @@ async function handleCopyQuote() {
     alert("Impossibile copiare negli appunti su questo dispositivo. Copia manualmente dal riepilogo.");
   }
 }
-
