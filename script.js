@@ -1,8 +1,9 @@
 // script.js
 
 // Configurazioni
-const LINEN_PRICE_PER_PERSON = 20; // € a persona per la biancheria
-const PET_FEE = 30; // costo fisso per animale domestico
+// Prezzi extra di default (alcuni alloggi li sovrascrivono dal JSON)
+const LINEN_PRICE_PER_PERSON = 20; // default linen fee per person
+const PET_FEE = 30; // default pet fee
 
 const MONTH_NAMES_IT = [
   "gennaio",
@@ -41,7 +42,9 @@ const ACCOMMODATION_MAP = {
   "rosmarino": "Rosmarino",
   "acquamarina": "Acquamarina",
   "beachside-retreats": "Beachside",
-  "villa-jolies": "Villa Jolies"
+  "villa-jolies": "Villa Jolies",
+  "villa-eden": "Villa Eden",
+  "villa-asinara": "Villa Asinara"
 };
 
 let prezziData = null;
@@ -161,10 +164,16 @@ function handleCalculate() {
 
   // Calcolo costi extra
   const cleaningCost = accData.pulizia || 0;
-  // Biancheria: sempre 0 per Villa Jolies, altrimenti segue la logica standard
-  const isVillaJolies = accommodationValue === "villa-jolies";
-  const linenCost = isVillaJolies ? 0 : (linenIncluded ? guests * LINEN_PRICE_PER_PERSON : 0);
-  const petCost = hasPet ? PET_FEE : 0;
+
+  // Costi specifici per alloggio (es. Villa Eden ha 15€/persona, pet 20€)
+  const propertyLinenPrice =
+    accommodationValue === "villa-jolies"
+      ? 0
+      : (accData.linenPerPerson ?? LINEN_PRICE_PER_PERSON);
+  const propertyPetFee = accData.petFee ?? PET_FEE;
+
+  const linenCost = linenIncluded ? guests * propertyLinenPrice : 0;
+  const petCost = hasPet ? propertyPetFee : 0;
 
   // Sconto in percentuale SOLO sull'affitto
   const validDiscountPercent = Math.min(Math.max(discountPercent, 0), 100); // clamp 0-100
@@ -230,10 +239,11 @@ function calculateRent(checkin, checkout, accData) {
   while (current < checkout) {
     nights++;
     const monthName = MONTH_NAMES_IT[current.getMonth()];
+    const dayOfMonth = current.getDate();
     const monthPrices = accData.prezzi || {};
-    const nightlyRate = monthPrices[monthName];
+    const nightlyRate = resolveNightlyRate(monthPrices, monthName, dayOfMonth);
 
-    if (typeof nightlyRate === "number") {
+    if (typeof nightlyRate === "number" && nightlyRate > 0) {
       rentTotal += nightlyRate;
     } else {
       console.warn(`Prezzo non trovato per mese ${monthName}, uso 0`);
@@ -246,6 +256,19 @@ function calculateRent(checkin, checkout, accData) {
   }
 
   return { nights, rentTotal, perMonthNights };
+}
+
+// Gestisce mesi con un solo prezzo o con fasce di date (es. Villa Eden con due prezzi nello stesso mese)
+function resolveNightlyRate(monthPrices, monthName, dayOfMonth) {
+  const entry = monthPrices[monthName];
+  if (typeof entry === "number") {
+    return entry;
+  }
+  if (Array.isArray(entry)) {
+    const match = entry.find(range => dayOfMonth >= range.from && dayOfMonth <= range.to);
+    if (match) return match.price;
+  }
+  return 0;
 }
 
 function getEnglishMonth(itMonth) {
@@ -386,7 +409,7 @@ function handleDownloadPdf() {
   let y = 15;
 
   // Se vuoi puoi sostituire con un dataURL base64 del tuo logo
-  const logoUrl = "https://static.wixstatic.com/media/b735a36e0f6c42a791260055e50d799b.png/v1/fill/w_110,h_110,al_c,q_85,enc_auto/b735a36e0f6c42a791260055e50d799b.png";
+  const logoUrl = "logo3-2 tondo.png";
 
   const drawPdf = (logoImg) => {
     // Logo (se caricato)
@@ -540,3 +563,5 @@ async function handleCopyQuote() {
     alert("Impossibile copiare negli appunti su questo dispositivo. Copia manualmente dal riepilogo.");
   }
 }
+
+

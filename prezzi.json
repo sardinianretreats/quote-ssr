@@ -100,5 +100,67 @@
       "novembre": 90,
       "dicembre": 90
     }
+  },
+  "Villa Eden": {
+    "pulizia": 130.0,
+    "linenPerPerson": 15,
+    "petFee": 20,
+    "prezzi": {
+      "gennaio": 295,
+      "febbraio": 295,
+      "marzo": 236,
+      "aprile": 265.5,
+      "maggio": 324.5,
+      "giugno": [
+        { "from": 1, "to": 15, "price": 413 },
+        { "from": 16, "to": 30, "price": 460.2 }
+      ],
+      "luglio": [
+        { "from": 1, "to": 20, "price": 501.5 },
+        { "from": 21, "to": 31, "price": 531 }
+      ],
+      "agosto": [
+        { "from": 1, "to": 20, "price": 590 },
+        { "from": 21, "to": 31, "price": 531 }
+      ],
+      "settembre": [
+        { "from": 1, "to": 15, "price": 413 },
+        { "from": 16, "to": 30, "price": 354 }
+      ],
+      "ottobre": 265.5,
+      "novembre": 236,
+      "dicembre": 236
+    }
+  },
+  "Villa Asinara": {
+    "pulizia": 100.0,
+    "linenPerPerson": 15,
+    "petFee": 20,
+    "prezzi": {
+      "gennaio": 221.25,
+      "febbraio": 221.25,
+      "marzo": 177,
+      "aprile": 199.125,
+      "maggio": 243.375,
+      "giugno": [
+        { "from": 1, "to": 15, "price": 309.75 },
+        { "from": 16, "to": 30, "price": 345.15 }
+      ],
+      "luglio": [
+        { "from": 1, "to": 20, "price": 376.125 },
+        { "from": 21, "to": 31, "price": 398.25 }
+      ],
+      "agosto": [
+        { "from": 1, "to": 20, "price": 442.5 },
+        { "from": 21, "to": 31, "price": 398.25 }
+      ],
+      "settembre": [
+        { "from": 1, "to": 15, "price": 309.75 },
+        { "from": 16, "to": 30, "price": 265.5 }
+      ],
+      "ottobre": 199.125,
+      "novembre": 177,
+      "dicembre": 177
+    }
   }
 }
