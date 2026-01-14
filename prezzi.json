@@ -106,30 +106,62 @@
     "linenPerPerson": 15,
     "petFee": 20,
     "prezzi": {
-      "gennaio": 295,
-      "febbraio": 295,
-      "marzo": 236,
-      "aprile": 265.5,
-      "maggio": 324.5,
+      "gennaio": 254.25,
+      "febbraio": 254.25,
+      "marzo": 203.4,
+      "aprile": 228.83,
+      "maggio": 279.68,
       "giugno": [
-        { "from": 1, "to": 15, "price": 413 },
-        { "from": 16, "to": 30, "price": 460.2 }
+        {
+          "from": 1,
+          "to": 15,
+          "price": 355.95
+        },
+        {
+          "from": 16,
+          "to": 30,
+          "price": 396.63
+        }
       ],
       "luglio": [
-        { "from": 1, "to": 20, "price": 501.5 },
-        { "from": 21, "to": 31, "price": 531 }
+        {
+          "from": 1,
+          "to": 20,
+          "price": 432.23
+        },
+        {
+          "from": 21,
+          "to": 31,
+          "price": 457.65
+        }
       ],
       "agosto": [
-        { "from": 1, "to": 20, "price": 590 },
-        { "from": 21, "to": 31, "price": 531 }
+        {
+          "from": 1,
+          "to": 20,
+          "price": 508.5
+        },
+        {
+          "from": 21,
+          "to": 31,
+          "price": 457.65
+        }
       ],
       "settembre": [
-        { "from": 1, "to": 15, "price": 413 },
-        { "from": 16, "to": 30, "price": 354 }
+        {
+          "from": 1,
+          "to": 15,
+          "price": 355.95
+        },
+        {
+          "from": 16,
+          "to": 30,
+          "price": 305.1
+        }
       ],
-      "ottobre": 265.5,
-      "novembre": 236,
-      "dicembre": 236
+      "ottobre": 228.83,
+      "novembre": 203.4,
+      "dicembre": 203.4
     }
   },
   "Villa Asinara": {
@@ -143,20 +175,52 @@
       "aprile": 199.125,
       "maggio": 243.375,
       "giugno": [
-        { "from": 1, "to": 15, "price": 309.75 },
-        { "from": 16, "to": 30, "price": 345.15 }
+        {
+          "from": 1,
+          "to": 15,
+          "price": 309.75
+        },
+        {
+          "from": 16,
+          "to": 30,
+          "price": 345.15
+        }
       ],
       "luglio": [
-        { "from": 1, "to": 20, "price": 376.125 },
-        { "from": 21, "to": 31, "price": 398.25 }
+        {
+          "from": 1,
+          "to": 20,
+          "price": 376.125
+        },
+        {
+          "from": 21,
+          "to": 31,
+          "price": 398.25
+        }
       ],
       "agosto": [
-        { "from": 1, "to": 20, "price": 442.5 },
-        { "from": 21, "to": 31, "price": 398.25 }
+        {
+          "from": 1,
+          "to": 20,
+          "price": 442.5
+        },
+        {
+          "from": 21,
+          "to": 31,
+          "price": 398.25
+        }
       ],
       "settembre": [
-        { "from": 1, "to": 15, "price": 309.75 },
-        { "from": 16, "to": 30, "price": 265.5 }
+        {
+          "from": 1,
+          "to": 15,
+          "price": 309.75
+        },
+        {
+          "from": 16,
+          "to": 30,
+          "price": 265.5
+        }
       ],
       "ottobre": 199.125,
       "novembre": 177,
