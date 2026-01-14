@@ -1,6 +1,6 @@
 {
   "Asfodelo": {
-    "pulizia": 60.0,
+    "pulizia": 60,
     "prezzi": {
       "gennaio": 140,
       "febbraio": 100,
@@ -17,7 +17,7 @@
     }
   },
   "Corbezzolo": {
-    "pulizia": 100.0,
+    "pulizia": 100,
     "prezzi": {
       "gennaio": 180,
       "febbraio": 160,
@@ -34,7 +34,7 @@
     }
   },
   "Rosmarino": {
-    "pulizia": 110.0,
+    "pulizia": 110,
     "prezzi": {
       "gennaio": 190,
       "febbraio": 170,
@@ -51,7 +51,7 @@
     }
   },
   "Villa Jolies": {
-    "pulizia": 250.0,
+    "pulizia": 250,
     "prezzi": {
       "gennaio": 260,
       "febbraio": 260,
@@ -68,24 +68,24 @@
     }
   },
   "Acquamarina": {
-    "pulizia": 80.0,
+    "pulizia": 80,
     "prezzi": {
-      "gennaio": 135.0,
-      "febbraio": 135.0,
-      "marzo": 162.0,
-      "aprile": 162.0,
-      "maggio": 189.0,
-      "giugno": 216.0,
+      "gennaio": 135,
+      "febbraio": 135,
+      "marzo": 162,
+      "aprile": 162,
+      "maggio": 189,
+      "giugno": 216,
       "luglio": 256.5,
-      "agosto": 270.0,
-      "settembre": 216.0,
+      "agosto": 270,
+      "settembre": 216,
       "ottobre": 175.5,
-      "novembre": 135.0,
-      "dicembre": 135.0
+      "novembre": 135,
+      "dicembre": 135
     }
   },
   "Beachside": {
-    "pulizia": 60.0,
+    "pulizia": 60,
     "prezzi": {
       "gennaio": 90,
       "febbraio": 90,
@@ -101,103 +101,62 @@
       "dicembre": 90
     }
   },
-
-  
-
-"Villa Eden": {
-  "pulizia": 130.0,
-  "linenPerPerson": 15,
-  "petFee": 20,
-  "prezzi": {
-    "gennaio": 254.25,
-    "febbraio": 254.25,
-    "marzo": 203.4,
-    "aprile": 228.83,
-    "maggio": 279.68,
-    "giugno": [
-      { "from": 1, "to": 15, "price": 355.95 },
-      { "from": 16, "to": 30, "price": 396.63 }
-    ],
-    "luglio": [
-      { "from": 1, "to": 20, "price": 432.23 },
-      { "from": 21, "to": 31, "price": 457.65 }
-    ],
-    "agosto": [
-      { "from": 1, "to": 20, "price": 508.5 },
-      { "from": 21, "to": 31, "price": 457.65 }
-    ],
-    "settembre": [
-      { "from": 1, "to": 15, "price": 355.95 },
-      { "from": 16, "to": 30, "price": 305.1 }
-    ],
-    "ottobre": 228.83,
-    "novembre": 203.4,
-    "dicembre": 203.4
-  }
-},
-
-
-  "Villa Asinara": {
-    "pulizia": 100.0,
-    "linenPerPerson": 15,
-    "petFee": 20,
+  "Villa Eden": {
+    "pulizia": 130,
     "prezzi": {
-      "gennaio": 221.25,
-      "febbraio": 221.25,
-      "marzo": 177,
-      "aprile": 199.125,
-      "maggio": 243.375,
+      "gennaio": 254.25,
+      "febbraio": 254.25,
+      "marzo": 203.4,
+      "aprile": 228.83,
+      "maggio": 279.68,
       "giugno": [
-        {
-          "from": 1,
-          "to": 15,
-          "price": 309.75
-        },
-        {
-          "from": 16,
-          "to": 30,
-          "price": 345.15
-        }
+        { "from": 1, "to": 15, "price": 355.95 },
+        { "from": 16, "to": 30, "price": 396.63 }
       ],
       "luglio": [
-        {
-          "from": 1,
-          "to": 20,
-          "price": 376.125
-        },
-        {
-          "from": 21,
-          "to": 31,
-          "price": 398.25
-        }
+        { "from": 1, "to": 20, "price": 432.23 },
+        { "from": 21, "to": 31, "price": 457.65 }
       ],
       "agosto": [
-        {
-          "from": 1,
-          "to": 20,
-          "price": 442.5
-        },
-        {
-          "from": 21,
-          "to": 31,
-          "price": 398.25
-        }
+        { "from": 1, "to": 20, "price": 508.5 },
+        { "from": 21, "to": 31, "price": 457.65 }
       ],
       "settembre": [
-        {
-          "from": 1,
-          "to": 15,
-          "price": 309.75
-        },
-        {
-          "from": 16,
-          "to": 30,
-          "price": 265.5
-        }
+        { "from": 1, "to": 15, "price": 432.23 },
+        { "from": 16, "to": 30, "price": 396.63 }
       ],
-      "ottobre": 199.125,
-      "novembre": 177,
-      "dicembre": 177
+      "ottobre": 305.1,
+      "novembre": 254.25,
+      "dicembre": 203.4
+    }
+  },
+  "Villa Asinara": {
+    "pulizia": 110,
+    "prezzi": {
+      "gennaio": 190.69,
+      "febbraio": 190.69,
+      "marzo": 152.55,
+      "aprile": 171.92,
+      "maggio": 210.38,
+      "giugno": [
+        { "from": 1, "to": 15, "price": 267.98 },
+        { "from": 16, "to": 30, "price": 297.47 }
+      ],
+      "luglio": [
+        { "from": 1, "to": 20, "price": 324.17 },
+        { "from": 21, "to": 31, "price": 343.54 }
+      ],
+      "agosto": [
+        { "from": 1, "to": 20, "price": 381.38 },
+        { "from": 21, "to": 31, "price": 343.54 }
+      ],
+      "settembre": [
+        { "from": 1, "to": 15, "price": 324.17 },
+        { "from": 16, "to": 30, "price": 297.47 }
+      ],
+      "ottobre": 228.83,
+      "novembre": 190.69,
+      "dicembre": 171.92
     }
   }
 }
