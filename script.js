@@ -44,7 +44,8 @@ const ACCOMMODATION_MAP = {
   "beachside-retreats": "Beachside",
   "villa-jolies": "Villa Jolies",
   "villa-eden": "Villa Eden",
-  "villa-asinara": "Villa Asinara"
+  "villa-asinara": "Villa Asinara",
+  "villetta-ruja": "Villetta Ruja"
 };
 
 let prezziData = null;
