@@ -72,16 +72,16 @@
     "prezzi": {
       "gennaio": 135.0,
       "febbraio": 135.0,
-      "marzo": 162.0,
-      "aprile": 162.0,
-      "maggio": 189.0,
+      "marzo": 120.0,
+      "aprile": 120.0,
+      "maggio": 168.0,
       "giugno": 216.0,
       "luglio": 256.5,
       "agosto": 270.0,
       "settembre": 216.0,
-      "ottobre": 175.5,
-      "novembre": 135.0,
-      "dicembre": 135.0
+      "ottobre": 156.0,
+      "novembre": 120.0,
+      "dicembre": 120.0
     }
   },
   "Beachside": {
@@ -89,14 +89,14 @@
     "prezzi": {
       "gennaio": 90,
       "febbraio": 90,
-      "marzo": 108,
-      "aprile": 108,
-      "maggio": 126,
+      "marzo": 102.0,
+      "aprile": 102.0,
+      "maggio": 119.0,
       "giugno": 144,
       "luglio": 180,
       "agosto": 180,
       "settembre": 153,
-      "ottobre": 117,
+      "ottobre": 110.0,
       "novembre": 90,
       "dicembre": 90
     }
@@ -106,11 +106,11 @@
     "linenPerPerson": 15,
     "petFee": 20,
     "prezzi": {
-      "gennaio": 295,
-      "febbraio": 295,
-      "marzo": 236,
-      "aprile": 265.5,
-      "maggio": 324.5,
+      "gennaio": 254.25,
+      "febbraio": 254.25,
+      "marzo": 228.83,
+      "aprile": 254.25,
+      "maggio": 305.1,
       "giugno": [
         {
           "from": 1,
@@ -159,9 +159,9 @@
           "price": 354
         }
       ],
-      "ottobre": 265.5,
-      "novembre": 236,
-      "dicembre": 236
+      "ottobre": 305.1,
+      "novembre": 254.25,
+      "dicembre": 228.83
     }
   },
   "Villa Asinara": {
@@ -169,11 +169,11 @@
     "linenPerPerson": 15,
     "petFee": 20,
     "prezzi": {
-      "gennaio": 221.25,
-      "febbraio": 221.25,
-      "marzo": 177,
-      "aprile": 199.125,
-      "maggio": 243.375,
+      "gennaio": 169.2,
+      "febbraio": 169.2,
+      "marzo": 135.36,
+      "aprile": 152.28,
+      "maggio": 186.12,
       "giugno": [
         {
           "from": 1,
@@ -222,9 +222,9 @@
           "price": 265.5
         }
       ],
-      "ottobre": 199.125,
-      "novembre": 177,
-      "dicembre": 177
+      "ottobre": 203.04,
+      "novembre": 135.36,
+      "dicembre": 135.36
     }
   },
   "Villetta Ruja": {
