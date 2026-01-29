@@ -75,10 +75,10 @@
       "marzo": 120.0,
       "aprile": 120.0,
       "maggio": 168.0,
-      "giugno": 216.0,
-      "luglio": 256.5,
-      "agosto": 270.0,
-      "settembre": 216.0,
+      "giugno": 192.0,
+      "luglio": 216.0,
+      "agosto": 240.0,
+      "settembre": 192.0,
       "ottobre": 156.0,
       "novembre": 120.0,
       "dicembre": 120.0
@@ -92,10 +92,10 @@
       "marzo": 102.0,
       "aprile": 102.0,
       "maggio": 119.0,
-      "giugno": 144,
-      "luglio": 180,
-      "agosto": 180,
-      "settembre": 153,
+      "giugno": 136,
+      "luglio": 170,
+      "agosto": 170,
+      "settembre": 136,
       "ottobre": 110.0,
       "novembre": 90,
       "dicembre": 90
@@ -115,48 +115,48 @@
         {
           "from": 1,
           "to": 15,
-          "price": 413
+          "price": 396.63
         },
         {
           "from": 16,
           "to": 30,
-          "price": 460.2
+          "price": 432.23
         }
       ],
       "luglio": [
         {
           "from": 1,
           "to": 20,
-          "price": 501.5
+          "price": 467.82
         },
         {
           "from": 21,
           "to": 31,
-          "price": 531
+          "price": 493.25
         }
       ],
       "agosto": [
         {
           "from": 1,
           "to": 20,
-          "price": 590
+          "price": 508.5
         },
         {
           "from": 21,
           "to": 31,
-          "price": 531
+          "price": 493.25
         }
       ],
       "settembre": [
         {
           "from": 1,
           "to": 15,
-          "price": 413
+          "price": 432.23
         },
         {
           "from": 16,
           "to": 30,
-          "price": 354
+          "price": 396.63
         }
       ],
       "ottobre": 305.1,
@@ -178,48 +178,48 @@
         {
           "from": 1,
           "to": 15,
-          "price": 309.75
+          "price": 236.88
         },
         {
           "from": 16,
           "to": 30,
-          "price": 345.15
+          "price": 263.95
         }
       ],
       "luglio": [
         {
           "from": 1,
           "to": 20,
-          "price": 376.125
+          "price": 287.64
         },
         {
           "from": 21,
           "to": 31,
-          "price": 398.25
+          "price": 304.56
         }
       ],
       "agosto": [
         {
           "from": 1,
           "to": 20,
-          "price": 442.5
+          "price": 338.4
         },
         {
           "from": 21,
           "to": 31,
-          "price": 398.25
+          "price": 304.56
         }
       ],
       "settembre": [
         {
           "from": 1,
           "to": 15,
-          "price": 309.75
+          "price": 287.64
         },
         {
           "from": 16,
           "to": 30,
-          "price": 265.5
+          "price": 263.95
         }
       ],
       "ottobre": 203.04,
