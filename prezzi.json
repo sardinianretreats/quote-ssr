@@ -287,5 +287,66 @@
       "novembre": 110,
       "dicembre": 110
     }
+  },
+  "Lubea Suite": {
+    "pulizia": 60.0,
+    "prezzi": {
+      "gennaio": 105.94,
+      "febbraio": 105.94,
+      "marzo": 84.75,
+      "aprile": 95.34,
+      "maggio": 116.53,
+      "giugno": [
+        {
+          "from": 1,
+          "to": 15,
+          "price": 148.31
+        },
+        {
+          "from": 16,
+          "to": 30,
+          "price": 165.26
+        }
+      ],
+      "luglio": [
+        {
+          "from": 1,
+          "to": 20,
+          "price": 180.09
+        },
+        {
+          "from": 21,
+          "to": 31,
+          "price": 190.69
+        }
+      ],
+      "agosto": [
+        {
+          "from": 1,
+          "to": 20,
+          "price": 211.88
+        },
+        {
+          "from": 21,
+          "to": 31,
+          "price": 190.69
+        }
+      ],
+      "settembre": [
+        {
+          "from": 1,
+          "to": 15,
+          "price": 148.31
+        },
+        {
+          "from": 16,
+          "to": 30,
+          "price": 127.13
+        }
+      ],
+      "ottobre": 95.34,
+      "novembre": 84.75,
+      "dicembre": 84.75
+    }
   }
 }

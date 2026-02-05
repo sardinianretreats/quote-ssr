@@ -42,6 +42,7 @@ const ACCOMMODATION_MAP = {
   "rosmarino": "Rosmarino",
   "acquamarina": "Acquamarina",
   "beachside-retreats": "Beachside",
+  "lubea-suite": "Lubea Suite",
   "villa-jolies": "Villa Jolies",
   "villa-eden": "Villa Eden",
   "villa-asinara": "Villa Asinara",
