@@ -106,62 +106,62 @@
     "linenPerPerson": 15,
     "petFee": 20,
     "prezzi": {
-      "gennaio": 254.25,
-      "febbraio": 254.25,
-      "marzo": 228.83,
-      "aprile": 254.25,
-      "maggio": 305.1,
+      "gennaio": 295.0,
+      "febbraio": 295.0,
+      "marzo": 265.5,
+      "aprile": 295.0,
+      "maggio": 354.0,
       "giugno": [
         {
           "from": 1,
           "to": 15,
-          "price": 396.63
+          "price": 460.2
         },
         {
           "from": 16,
           "to": 30,
-          "price": 432.23
+          "price": 501.5
         }
       ],
       "luglio": [
         {
           "from": 1,
           "to": 20,
-          "price": 467.82
+          "price": 542.8
         },
         {
           "from": 21,
           "to": 31,
-          "price": 493.25
+          "price": 572.3
         }
       ],
       "agosto": [
         {
           "from": 1,
           "to": 20,
-          "price": 508.5
+          "price": 590.0
         },
         {
           "from": 21,
           "to": 31,
-          "price": 493.25
+          "price": 572.3
         }
       ],
       "settembre": [
         {
           "from": 1,
           "to": 15,
-          "price": 432.23
+          "price": 501.5
         },
         {
           "from": 16,
           "to": 30,
-          "price": 396.63
+          "price": 460.2
         }
       ],
-      "ottobre": 305.1,
-      "novembre": 254.25,
-      "dicembre": 228.83
+      "ottobre": 354.0,
+      "novembre": 295.0,
+      "dicembre": 265.5
     }
   },
   "Villa Asinara": {
@@ -169,62 +169,62 @@
     "linenPerPerson": 15,
     "petFee": 20,
     "prezzi": {
-      "gennaio": 169.2,
-      "febbraio": 169.2,
-      "marzo": 135.36,
-      "aprile": 152.28,
-      "maggio": 186.12,
+      "gennaio": 167.5,
+      "febbraio": 167.5,
+      "marzo": 134.0,
+      "aprile": 150.75,
+      "maggio": 184.25,
       "giugno": [
         {
           "from": 1,
           "to": 15,
-          "price": 236.88
+          "price": 234.5
         },
         {
           "from": 16,
           "to": 30,
-          "price": 263.95
+          "price": 261.3
         }
       ],
       "luglio": [
         {
           "from": 1,
           "to": 20,
-          "price": 287.64
+          "price": 284.75
         },
         {
           "from": 21,
           "to": 31,
-          "price": 304.56
+          "price": 301.5
         }
       ],
       "agosto": [
         {
           "from": 1,
           "to": 20,
-          "price": 338.4
+          "price": 335.0
         },
         {
           "from": 21,
           "to": 31,
-          "price": 304.56
+          "price": 301.5
         }
       ],
       "settembre": [
         {
           "from": 1,
           "to": 15,
-          "price": 287.64
+          "price": 284.75
         },
         {
           "from": 16,
           "to": 30,
-          "price": 263.95
+          "price": 261.3
         }
       ],
-      "ottobre": 203.04,
-      "novembre": 135.36,
-      "dicembre": 135.36
+      "ottobre": 201.0,
+      "novembre": 134.0,
+      "dicembre": 134.0
     }
   },
   "Villetta Ruja": {
@@ -291,62 +291,62 @@
   "Lubea Suite": {
     "pulizia": 60.0,
     "prezzi": {
-      "gennaio": 105.94,
-      "febbraio": 105.94,
-      "marzo": 84.75,
-      "aprile": 95.34,
-      "maggio": 116.53,
+      "gennaio": 95.0,
+      "febbraio": 95.0,
+      "marzo": 76.0,
+      "aprile": 85.5,
+      "maggio": 104.5,
       "giugno": [
         {
           "from": 1,
           "to": 15,
-          "price": 148.31
+          "price": 133.0
         },
         {
           "from": 16,
           "to": 30,
-          "price": 165.26
+          "price": 148.2
         }
       ],
       "luglio": [
         {
           "from": 1,
           "to": 20,
-          "price": 180.09
+          "price": 161.5
         },
         {
           "from": 21,
           "to": 31,
-          "price": 190.69
+          "price": 171.0
         }
       ],
       "agosto": [
         {
           "from": 1,
           "to": 20,
-          "price": 211.88
+          "price": 190.0
         },
         {
           "from": 21,
           "to": 31,
-          "price": 190.69
+          "price": 171.0
         }
       ],
       "settembre": [
         {
           "from": 1,
           "to": 15,
-          "price": 148.31
+          "price": 133.0
         },
         {
           "from": 16,
           "to": 30,
-          "price": 127.13
+          "price": 114.0
         }
       ],
-      "ottobre": 95.34,
-      "novembre": 84.75,
-      "dicembre": 84.75
+      "ottobre": 85.5,
+      "novembre": 76.0,
+      "dicembre": 76.0
     }
   }
 }
